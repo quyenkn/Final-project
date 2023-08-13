@@ -1,0 +1,258 @@
+body {
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(56, 56, 59); 
+}
+
+.main-image {
+    background-image: url(https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.top-nav {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.home-nav-link {
+    font-size: 2rem;
+}
+
+.top-nav a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.home-nav {
+    display: flex;
+}
+
+.middle-nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.right-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.underlined-heading {
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+}
+
+.cake-description {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13%;
+    font-size: 3.5rem;
+}
+
+.order-now-button, .add-to-cart-button {
+    border: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
+    background-color: grey;
+    cursor: pointer;
+    width: 12rem;
+    height: 4rem;
+    transition-duration: 0.1s;
+}
+  
+.order-now-button:hover, .add-to-cart-button:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+    color: white;
+}
+
+.most-popular-section {
+    text-align: center;
+}
+
+.most-popular-heading, .our-cakes-heading {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+.most-popular-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.most-popular-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.most-popular-cake-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.most-popular-cake-title {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: rgba(40, 40, 40, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.our-cakes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-cakes-description {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    max-width: 40%;
+    text-align: center;
+}
+
+.our-cakes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.our-cakes-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-cakes-grid-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.our-cakes-info{
+    list-style-type: none;
+    text-align: center;
+}
+
+.custom-enquiry-form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    border: 1px solid rgba(51, 51, 51, 1);
+    padding: 20px;
+    color: rgb(51, 51, 51);
+    background-color: white;
+}
+
+.submit-button {
+    background-color: rgba(56, 56, 59, 1);
+    font-size: 1rem;
+    color: white;
+    padding: 19px 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-main-image {
+    background-image: url(https://images.unsplash.com/photo-1609968159000-92ebd2c71d22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80)
+}
+
+.contact-us-description {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    font-size: 2rem;
+}
+
+.get-in-touch-button {
+    display: inline-block;
+    background-color: rgba(51, 51, 51, 1);
+    font-size: 1rem;
+    color: white;
+    padding: 19px 32px;
+    border: none;
+    cursor: pointer;
+  }
+
+.form-container {
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid rgba(51, 51, 51, 1);
+    padding: 20px;
+    color: rgba(51, 51, 51, 1);
+    background-color: white;
+  }
+  
+  .form-title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .form-field {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid lightgrey;
+  }
+  
+  .form-field textarea {
+    height: 100px;
+  }
+  
+  .form-button {
+    background-color: rgba(56, 56, 59, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
