@@ -12,59 +12,75 @@
 </head>
 
 <body>
-    <main class="custom-enquriy-main-image">
-    <div class="overlay">
-    <nav class="top-nav">
-        <div class="home-nav">
-            <a class=home-nav-link href="page_one_main.html">The Cake Plantry</a>
-        </div>
-        <div class="middle-nav">
-            <a href="page_two_ourcakes.html">Our Cakes</a>
-            <a href="page_three_customenquiry.html"><span class="underlined-heading">Custom Enquiry</span></a>
-            <a href="page_four_contact.html">Contact</a>
-        </div>
-        <div class="right-nav">
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-shopping-cart"></a>
-        </div>
-    </nav>
+    <main class="custom-enquiry-main-image">
+        <div class="custom-enquiry-overlay">
+            <nav class="top-nav">
+                <div class="home-nav">
+                    <a class=home-nav-link href="page_one_main.html">The Cake Plantry</a>
+                </div>
+                <div class="middle-nav">
+                    <a href="page_two_ourcakes.html">Our Cakes</a>
+                    <a href="page_three_customenquiry.html"><span class="underlined-heading">Custom Enquiry</span></a>
+                    <a href="page_four_contact.html">Contact</a>
+                </div>
+                <div class="right-nav">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-shopping-cart"></a>
+                </div>
+            </nav>
 
-    <main class="our-cakes-section">
-        <p class="our-cakes-heading">Custom Order Enquiry</p>
-        <p class="our-cakes-description">Fill out the form below to enquire about your custom order</p>
-    </main>
+        <div class="custom-orders-section">
+            <p class="custom-orders-heading">Custom Order Enquiry</p>
+            <p class="custom-orders-description">Fill out the form below to enquire about your custom order</p>
+        </div>
 
-        
-        <form class="custom-enquiry-form-container">
-                <h2>Custom Order Enquiry Form</h2>
-                <label for="text">Your Name (required)</label>
-                <input class="form-field" type="text" name="name" id="name" required>
-                <label for="text">Your E-mail (required)</label>
-                <input class="form-field" type="text" name="email" id="email" required>
-                <label for="text">Your Phone Number (required)</label>
-                <input class="form-field" type="text" name="phonenumber" id="phonenumber" required>
-                <label for="budget-selection">Working Budget</label>
-                    <select id="budget-selection">
-                        <option value="under-50">Under $50</option>
-                        <option value="50-100">$50 - $100</option>
-                        <option value="100-200">$100 - $200</option>
-                        <option value="200-300">$200 - $300</option>
-                        <option value="300-400">$300 - $400</option>
-                        <option value="400-500">$400 - $500</option>
-                        <option value="500-or-more">$500 or more</option>
-                    </select>
-                <h3>Pickup or Delivery</h3>
-                    <label for="">Pickup</label>
-                    <input type="radio" name="delivery-method" value="pickup">
-                    <label for="">Delivery</label>
-                    <input type="radio" name="delivery-method" value="delivery">
-                    <br>
-                    <label for="order-details">Other Order Details (e.g. design details, gluten-free options)</label>
-                    <textarea id="order-details" cols="50" rows="3" required></textarea>
-                <button class="submit-button">Submit</button>
-        </form>
-    </div>
+        <div class="custom-enquiry-form-container">
+                <form>
+                    <p class="form-heading">Custom Order Enquiry Form</p>
+                    <div class="custom-form-field">
+                        <label for="text">Your Name (required)</label>
+                        <input class="form-field" type="text" placeholder="First Name" required>
+                    </div>
+                        <input class="form-field" type="text" placeholder="Last Name" required>
+                    <div class="custom-form-field">
+                        <label for="text">Your E-mail (required)</label>
+                        <input class="form-field" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="custom-form-field">
+                        <label for="text">Your Phone Number (required)</label>
+                        <input class="form-field" type="text" placeholder="Phone Number" required>
+                    </div>
+                    <div class="custom-form-field">
+                        <label for="budget-selection">Working Budget</label>
+                        <select class="form-field" id="budget-selection">
+                            <option value="under-100">Under $100</option>
+                            <option value="100-200">$100 - $200</option>
+                            <option value="200-300">$200 - $300</option>
+                            <option value="300-400">$300 - $400</option>
+                            <option value="400-500">$400 - $500</option>
+                            <option value="500-or-more">$500 or more</option>
+                        </select>
+                    </div>
+                    <div class="pickupordeliveryoption">
+                        <p class="pickup-or-delivery-label">Pickup or Delivery</p>
+                        <label for="pickup">Pickup</label>
+                        <input type="radio" name="delivery-method" value="pickup">
+                        <label for="delivery">Delivery</label>
+                        <input type="radio" name="delivery-method" value="delivery">
+                    </div>
+                    <div class="custom-form-field">
+                        <label for="order-details">Other Order Details (e.g. design details, gluten-free options)</label>
+                        <textarea class="form-field"></textarea>
+                    </div>
+                    <div class="submit-button-container">
+                        <button class="submit-button">Submit</button>
+                    </div>
+                </form>
+
+        </div>
+
+        </div>
     </main>
 
     <footer>

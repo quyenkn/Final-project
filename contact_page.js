@@ -5,3 +5,4 @@ getInTouchButton.addEventListener("click", function() {
     formContainer.style.display = "block";
     getInTouchButton.style.display = "none";
 });
+

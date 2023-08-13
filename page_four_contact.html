@@ -13,36 +13,42 @@
 
 <body>
     <main class="contact-main-image">
-        <div class="overlay">
+        <div class="contact-overlay">
             <nav class="top-nav">
+
                 <div class="home-nav">
                     <a class=home-nav-link href="page_one_main.html">The Cake Plantry</a>
                 </div>
+
                 <div class="middle-nav">
                     <a href="page_two_ourcakes.html">Our Cakes</a>
                     <a href="page_three_customenquiry.html">Custom Enquiry</a>
                     <a href="page_four_contact.html"><span class="underlined-heading">Contact</span></a>
                 </div>
+                
                 <div class="right-nav">
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-shopping-cart"></a>
                 </div>
+
             </nav>
         
-            <div class="cake-description">
-                <p>Contact Us</p>
+            <div class="contact-us-description">
+                <p class="contact-us-heading">Contact Us</p>
                 <button class="get-in-touch-button" id="get-in-touch-button">Get In Touch</button>
 
                 <div class="form-container" id="form-container">
-                    <div class="form-title">Contact Us</div>
-                    <form>
-                        <input class="form-field" type="text" placeholder="First Name">
-                        <input class="form-field" type="text" placeholder="Last Name">
-                        <input class="form-field" type="email" placeholder="Email">
-                        <textarea class="form-field" placeholder="Message"></textarea>
-                    </form>
-                    <button class="form-button">Send</button>
+                    <div class="form-heading">Contact Us</div>
+                        <form>
+                            <input class="form-field" type="text" placeholder="First Name" required>
+                            <input class="form-field" type="text" placeholder="Last Name" required>
+                            <input class="form-field" type="email" placeholder="Email" required>
+                            <textarea class="form-field" placeholder="Message" required></textarea>
+                            <div class="submit-button-container">
+                                <button class="form-button">Send</button>
+                            </div>
+                        </form>
                 </div>
 
             </div>
@@ -68,6 +74,5 @@
 <script src="contact_page.js"></script>
 
 </body>
-
 
 </html>
