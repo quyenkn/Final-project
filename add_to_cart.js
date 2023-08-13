@@ -1,11 +1,13 @@
-const addToCartButton = document.querySelector("#add-to-cart-button");
-const displayShoppingCartQuantity = document.querySelector("#display-shopping-cart-quantity");
+const shoppingCartQuantity = document.querySelector("#display-shopping-cart-quantity");
 
-let value = 0;
-function incrementAndDisplay() {
-    value++;
-    displayShoppingCartQuantity.textContent = "" + value; 
+let totalCartValue = 0;
+function addCartValue() {
+    totalCartValue++;
+    shoppingCartQuantity.textContent = totalCartValue; 
 }
 
-
-addToCartButton.addEventListener("click", incrementAndDisplay);
+for (let i = 1; i < 9; i++) {
+    const buttonId = "#add-to-cart-button" + i;
+    const addToCartButton = document.querySelector(buttonId);
+    addToCartButton.addEventListener("click", addCartValue);
+}
